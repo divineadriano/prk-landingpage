@@ -10,9 +10,48 @@
    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
    <!--Favicon icon-->
 
+   <script>
+      function initializeFirebase(){
+            var config = {
+            apiKey: "AIzaSyAUbigpi_NUPd-Q-GjqYyO1vXRliqnem80",
+            authDomain: "kyc-demo-request.firebaseapp.com",
+            databaseURL: "https://kyc-demo-request.firebaseio.com/",
+            storageBucket: "gs://kyc-demo-request.appspot.com"
+            };
+            firebase.initializeApp(config);
+      }
+   </script>
+   
+   <script>
+      function save(){
+            var database = firebase.database();
+            var firebaseref = database.ref();
+            var fname = document.getElementById("first_name").value;
+            var lname = document.getElementById("last_name").value;
+            var email = document.getElementById("email").value;
+            var company = document.getElementById("company").value;
+            var message = document.getElementById("message").value;
+
+            if (fname === '' || lname === '' || email === '' || company === '' || message === '' ){
+               window.alert('All fields are required.');
+            } else{
+               firebaseref.child("DemoRequest").push().set({FirstName:fname, LastName:lname, EmailAddress:email, Company:company, Message:message});
+               window.alert('You have requested for a demo of ProximaX KYC! We will keep in touch with your shortly.');
+               document.getElementById("first_name").value="";
+               document.getElementById("last_name").value="";
+               document.getElementById("email").value="";
+               document.getElementById("company").value="";
+               document.getElementById("message").value="";
+            }
+            
+            
+      }
+   </script>
+   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="82">
+<body data-spy="scroll" data-target=".navbar" data-offset="82" onLoad="initializeFirebase()">
    <div class="site-loader">
       <div class="loader-dots">
          <div class="circle circle-1"></div>
@@ -335,7 +374,7 @@
             <div class="col-sm-12 text-center">
                <div class="contact-form">
                   <p class="text-center mb5 wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s" style="font-size:1.5em;">Secure onboarding has never been made so cost efficient and easy. Get in touch with us now at <i>kycinfo@proximax.io</i> or by completing the below form.</p>
-                  <form id="ajax-contact" method="post" action="contact-mail.php" class="wow fadeInUp" data-wow-delay=".7s" data-wow-duration=".7s">
+                  <form id="ajax-contact" class="wow fadeInUp" data-wow-delay=".7s" data-wow-duration=".7s">
                      <div id="form-messages" class="notification contact"></div>
                      <div class="row">
                         <div class="col-sm-6">
@@ -355,14 +394,14 @@
                      <div class="row">
                      <div class="col-sm-6">
                            <div class="form-group">
-                              <input  id="first_name" class="form-control" name="first_name" required="" type="text" >  
-                              <label for="first_name">Email Address :</label>
+                              <input  id="email" class="form-control" name="first_name" required="" type="email" >  
+                              <label for="email">Email Address :</label>
                            </div>
                      </div>
                      <div class="col-sm-6">
                            <div class="form-group">
-                              <input id="last_name" class="form-control" name="last_name" required="" type="text" placeholder=""> 
-                              <label for="last_name">Company Name :</label>
+                              <input id="company" class="form-control" name="last_name" required="" type="text" placeholder=""> 
+                              <label for="company">Company Name :</label>
                            </div>
                      </div>
                      </div>
@@ -371,7 +410,7 @@
                         <textarea id="message" class="form-control" name="message" rows="5" required="" placeholder=""></textarea>
                         <label for="message">Message :</label>
                      </div>
-                     <button type="submit" class="btn-white"> SUBMIT</button>
+                     <button type="submit" class="btn-white" onClick="save()"> SUBMIT</button>
                   </form>
                </div>
             </div>
@@ -400,10 +439,10 @@
       </div>
       <div class="col-sm-4" data-wow-delay=".9s" data-wow-duration=".9s">
          <h3>Useful Links</h3>
-         <p><a href="/tou">Terms of Use</a> </p>
-         <p><a href="/privacy">Privacy Policy</a> </p>
-         <p><a href="/cookie">Cookie Policy</a> </p>
-         <p><a href="/faq">FAQs</a> </p>
+         <p><a href="https://proximax.io/tou/" target="_blank">Terms of Use</a> </p>
+         <p><a href="https://proximax.io/privacy/" target="_blank">Privacy Policy</a> </p>
+         <p><a href="https://proximax.io/cookiepolicy/" target="_blank">Cookie Policy</a> </p>
+         <p><a href="https://proximax.io/faq/" target="_blank">FAQs</a> </p>
       </div>
    </div>
    </div>
