@@ -18,11 +18,4 @@ app.get('/kyc', function(req, res) {
 	res.render('pages/kyc');
 });
 
-//kyc
-app.get('/try', function(req, res) {
-	res.render('pages/try');
-});
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
-  
-  
-

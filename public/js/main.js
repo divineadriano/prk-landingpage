@@ -117,17 +117,24 @@ $(function() {
             .done(function(response) {
                 $(formMessages).removeClass('error');
                 $(formMessages).addClass('success');
-                $(formMessages).text(response);
+                $(formMessages).text("Thank you for filling up our contact form. Our team will get in touch with you soon!");
                 $('#first_name').val('');
                 $('#last_name').val('');
                 $('#email').val('');
+                $('#company').val('');
                 $('#message').val('');
+                setTimeout(function(){
+                    $(formMessages).hide();
+                }, 5*1000);
             })
             .fail(function(data) {
                 $(formMessages).removeClass('success');
                 $(formMessages).addClass('error');
                 if (data.responseText !== '') {
-                    $(formMessages).text(data.responseText);
+                    alert("Thank you for completing our below form. Our team will get in touch with you soon!");
+                    setTimeout(function(){
+                        $(formMessages).hide();
+                    }, 5*1000);
                 } else {
                     $(formMessages).text('Oops! An error occured and your message could not be sent.'); /*--------- Contact submission erroe Message ---------------*/
                 }
