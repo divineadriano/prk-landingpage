@@ -448,14 +448,14 @@
 .gif-holder
 {
   width:130%;
-  z-index: 1;
+  z-index: 2;
 }
 .gif-inside
 {
-  margin-top:3%;
-  margin-left:14%;
-  width:102%;
-  z-index: 2;
+  margin-top:3.8%;
+  margin-left:15.5%;
+  width:99%;
+  z-index: 1;
 }
 
 .parentm{
@@ -473,9 +473,9 @@
 }
 .gif-inside-m
 {
-  margin-top:4%;
-  margin-left: 2.5%;
-  width:45%;
+  margin-top:5.5%;
+  margin-left: 3%;
+  width:44%;
   z-index: 1;
 }
 
@@ -584,29 +584,17 @@ max-height:100% !important;
   .gif-holder
   {
     width:115%;
-    z-index: 1;
+    z-index: 2;
   }
   .gif-inside
   {
     margin-top:3%;
     margin-left:14%;
-    width:87%;
-    z-index: 2;
+    width:87.5%;
+    z-index: 1;
   }
   .kycgiftext{
     padding-right: 10em !important;
-  }
-  .gif-holder
-  {
-    width:115%;
-    z-index: 1;
-  }
-  .gif-inside
-  {
-    margin-top:3%;
-    margin-left:14%;
-    width:87%;
-    z-index: 2;
   }
 
   .deviceRow{
@@ -744,14 +732,14 @@ max-height:100% !important;
   .gif-holder
   {
     width:115%;
-    z-index: 1;
+    z-index: 2;
   }
   .gif-inside
   {
-    margin-top:3%;
+    margin-top:3.5%;
     margin-left:14%;
     width:87%;
-    z-index: 2;
+    z-index: 1;
   }
 
   .deviceRow{
