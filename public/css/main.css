@@ -1243,7 +1243,6 @@ max-height:100% !important;
     width:20%;
   }
   .sticky-header{
-    padding-top:5% !important;
     overflow: hidden;
     z-index: 10000;
   }
