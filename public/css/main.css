@@ -342,12 +342,12 @@
 }
 
 #video-background {
-  position: absolute;
+  position: fixed !important;
   top:0;
   left:0;
   width: auto; 
   z-index: -10;
-  max-width: 100%;
+  min-width: 100%;
   overflow-x: hidden !important;
 }
 .howto-image{
@@ -499,11 +499,6 @@
   font-size:3em !important;
   margin-right: 5%;
 }
-
-.videoBackground{
-  overflow-x: hidden !important;
-}
-
 
 .column {
 float: left;
@@ -663,12 +658,6 @@ max-height:100% !important;
   margin-top:0 !important;
   }
 
- 
-  .videoBackground{
-    max-width:100%;
-    overflow-x: hidden !important;
-  }
-
   .columnRight {
   margin-left:5% !important;
   width: 90% !important;
@@ -801,6 +790,15 @@ max-height:100% !important;
   width:40% !important;
   margin-bottom:20% !important;
   }
+  #video-background {
+    position: fixed !important;
+    top:0;
+    left:0;
+    width: auto; 
+    z-index: -10;
+    min-width:120%;
+    overflow: hidden !important;
+  }
 }
 @media only screen and (max-width: 479px) {
   h1{
@@ -891,12 +889,7 @@ max-height:100% !important;
 
 
 
-  body{
-    max-width: 100%;
-    overflow-x: hidden !important;
-  }
-
-  #home{
+  body, html, #home{
     max-width: 100%;
     overflow-x: hidden !important;
   }
@@ -1036,12 +1029,13 @@ max-height:100% !important;
     font-weight: normal;
   }
   #video-background {
-    position: absolute;
+    position: fixed !important;
     top:0;
     left:0;
-    max-width: 100%;
-    min-width: 1000px;
-    overflow: hidden;
+    width: auto; 
+    z-index: -2;
+    min-width:1000px;
+    overflow: hidden !important;
   }
   .kycfeatures-img{
     margin-top: 1.5em !important;
@@ -1098,6 +1092,10 @@ max-height:100% !important;
 
 @media only screen and (max-width: 1024px) {
 
+  body, html, #home{
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
   
   .kycgifBeforeText{
     font-size:1.5em !important;
