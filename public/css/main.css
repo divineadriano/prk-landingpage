@@ -331,6 +331,8 @@
   padding:10%;
   height:100%;
   color:white;
+  max-width: 100%;
+  overflow-x: hidden !important;
 }
 
 .bannerlogo{
@@ -343,10 +345,10 @@
   position: absolute;
   top:0;
   left:0;
-  min-width: 100%;
   width: auto; 
   z-index: -10;
-  overflow: hidden;
+  max-width: 100%;
+  overflow-x: hidden !important;
 }
 .howto-image{
   width:60%;
@@ -499,7 +501,7 @@
 }
 
 .videoBackground{
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 
@@ -662,6 +664,11 @@ max-height:100% !important;
   }
 
  
+  .videoBackground{
+    max-width:100%;
+    overflow-x: hidden !important;
+  }
+
   .columnRight {
   margin-left:5% !important;
   width: 90% !important;
@@ -885,11 +892,13 @@ max-height:100% !important;
 
 
   body{
-    overflow-x: hidden;
+    max-width: 100%;
+    overflow-x: hidden !important;
   }
 
   #home{
-    overflow-x:hidden;
+    max-width: 100%;
+    overflow-x: hidden !important;
   }
   .kycgifTextHeader{
     font-size: 2em;
@@ -1321,6 +1330,8 @@ max-height:100% !important;
 body {
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden !important;
 }
 
 button {

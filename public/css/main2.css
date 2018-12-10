@@ -30,7 +30,8 @@
 /*//////////////////////////////////////////////////////////////////
 [ rs Modal ]*/
 
-body {padding-right: 0px !important;}
+body {padding-right: 0px !important;max-width: 100%;
+  overflow-x: hidden !important;}
 .modal {
   padding: 0px !important;
   z-index: 1160;

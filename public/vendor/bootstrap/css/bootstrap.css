@@ -70,6 +70,8 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
+  max-width: 100%;
+  overflow-x: hidden !important;
 }
 
 *,

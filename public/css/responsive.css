@@ -354,7 +354,10 @@
     font-size: .75em; } }
 @media (max-width: 1024px) {
   body {
-    font-size: 13px; }
+    font-size: 13px;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
 
   .banner {
     border: none; }

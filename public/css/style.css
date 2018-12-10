@@ -97,7 +97,10 @@
 
 body {
   font-family: 'Nunito', sans-serif;
-  color: #3455ff; }
+  color: #3455ff;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
 
 button {
   background-color: transparent; }
