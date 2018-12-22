@@ -575,6 +575,10 @@ max-height:100% !important;
 
 
 @media only screen and (max-width: 1440px){
+  body, html, #home{
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
   .kycgiftext{
     padding-right: 10em !important;
   }
@@ -2975,7 +2979,7 @@ ul.template-list li {
   body {
     font-size: 13px;
     overflow-x: hidden; }
-    
+
   body, html, #home{
     max-width: 100%;
     overflow-x: hidden !important;
