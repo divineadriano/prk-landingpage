@@ -2616,6 +2616,10 @@ ul.template-list li {
     padding: 9px 15px; } }
 /*for tablet device  */
 @media (min-width: 768px) and (max-width: 1024px) {
+  body, html, #home{
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
   .burger {
     padding: 70px 0; } }
 /*for mobile device (till rotate view) */
@@ -2926,6 +2930,10 @@ ul.template-list li {
     left: 0 !important;
     right: 0; } }
 @media (min-width: 768px) and (max-width: 1024px) {
+  body, html, #home{
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
 	.img-banner-logo{
 		width:50%;
 		height:50%;
@@ -2967,6 +2975,11 @@ ul.template-list li {
   body {
     font-size: 13px;
     overflow-x: hidden; }
+    
+  body, html, #home{
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
 
   .banner {
     border: none; }
