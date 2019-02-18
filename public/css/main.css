@@ -1591,15 +1591,16 @@ color:#fff;  }
   text-transform: uppercase; }
 
 .btn-alpha {
-  background-color: #8C8C8C;
-  color: #fff !important;
-  border: 2px solid tranparent; }
+  background-color:rgb(30, 139, 136);
+  padding: 0 5px !important;
+  }
   .btn-alpha:hover {
-    background: url("../images/bg-pattern.png"),-moz-linear-gradient( 135deg, #48A48E, #0A786B 50%, #0E7674 100%);
-    background: url("../images/bg-pattern.png"), -webkit-linear-gradient( 135deg, #48A48E 0%, #0A786B 50%, #0E7674 100%);
-    background: url("../images/bg-pattern.png"), -ms-linear-gradient( 135deg, #48A48E 0%, #0A786B 50%, #0E7674 100%);
-    background: url("../images/bg-pattern.png"), linear-gradient( 135deg, #48A48E 0%, #0A786B 50%, #0E7674 100%); }
-
+    background:rgb(73, 73, 73); }
+  
+.btn-alpha a{
+  color: #fff !important;
+  font-size: 1.2em !important;
+}
 .btn-white, .menu-btn {
   color: #fff;
   border: 2px solid #fff; }
@@ -1692,7 +1693,7 @@ color:#fff;  }
   border-radius: 0;
   perspective: 1000px;
   transform-origin: top;
-  color:#9FC5BE;
+  color:#03948F;
   border-bottom: 1px solid transparent; }
 
 .navbar.sticky-header {
@@ -1710,13 +1711,13 @@ color:#fff;  }
   padding: 15px 10px;
   text-transform: uppercase;
   font-weight: 800;
-  color: #9FC5BE; }
+  color: rgb(112, 190, 188); }
   .navbar-nav > li > a:hover {
-    color: #0E7674; }
+    color: rgb(1, 109, 100); }
 
 .navbar-nav li.active a, .navbar-nav > li > a:focus, .navbar-nav > li > a:hover, .navbar-nav > li > a:active {
   background-color: transparent; 
-  color: #2cb4ab; }
+  color: rgb(58, 175, 171); }
 
 .navbar-nav li.active a {
   color: #fff !important; }
